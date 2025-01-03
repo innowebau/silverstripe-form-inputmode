@@ -1,0 +1,10 @@
+---
+Name: inputmodes
+---
+
+SilverStripe\Forms\NumericField:
+  extensions:
+    - Innoweb\InputMode\Extensions\NumericFieldExtension
+SilverStripe\Forms\EmailField:
+  extensions:
+    - Innoweb\InputMode\Extensions\EmailFieldExtension
