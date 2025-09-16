@@ -6,12 +6,10 @@ use SilverStripe\Core\Extension;
 
 class NumericFieldExtension extends Extension
 {
-    public function updateAttributes(&$attributes)
+    public function updateInputMode(&$mode)
     {
-        if ($this->getOwner()->getScale() === 0) {
-            $attributes['inputmode'] = 'numeric';
-        } else {
-            $attributes['inputmode'] = 'decimal';
-        }
+        $mode = $this->getOwner()->getScale() === 0
+            ? 'numeric'
+            : 'decimal';
     }
 }
