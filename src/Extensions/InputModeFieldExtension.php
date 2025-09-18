@@ -9,13 +9,13 @@ class InputModeFieldExtension extends Extension
 {
     public function updateAttributes(&$attributes)
     {
-        $mode = $this->getInputMode();
+        $mode = $this->getOwner()->getInputMode();
         if (!empty($mode)) {
             $attributes['inputmode'] = $mode;
         }
     }
 
-    protected function getInputMode()
+    public function getInputMode()
     {
         $mode = $this->getOwner()->getDynamicData('inputMode');
         if (is_null($mode)) {

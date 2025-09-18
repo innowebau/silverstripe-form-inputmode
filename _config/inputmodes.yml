@@ -2,8 +2,13 @@
 Name: inputmodes
 ---
 
+SilverStripe\Forms\FormField:
+  extensions:
+    - Innoweb\InputMode\Extensions\InputModeFieldExtension
+
 SilverStripe\Forms\NumericField:
   extensions:
     - Innoweb\InputMode\Extensions\NumericFieldExtension
+
 SilverStripe\Forms\EmailField:
   input_mode: email
