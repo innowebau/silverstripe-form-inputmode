@@ -5,11 +5,11 @@
 
 ## Introduction
 
-Adds the inputmode attribute to email and numeric fields
+Adds the [inputmode attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inputmode) to email and numeric fields
 
 ## Requirements
 
-* Silverstripe ^5
+* Silverstripe ^6
  
 ## Installation
 

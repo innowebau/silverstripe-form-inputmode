@@ -21,6 +21,7 @@ class InputModeFieldExtension extends Extension
         if (is_null($mode)) {
             $mode = $this->getOwner()->config()->get('input_mode');
         }
+
         $this->getOwner()->invokeWithExtensions('updateInputMode', $mode);
         return $mode;
     }
